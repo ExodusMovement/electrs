@@ -57,7 +57,7 @@ jobs:
           target
         key: freebsd-${{ env.FREEBSD_VER }}-cargo-checks-${{ hashFiles('**/Cargo.lock') }}
     - name: Compile Checks in FreeBSD
-      uses: vmactions/freebsd-vm@v1
+      uses: vmactions/freebsd-vm@c9f815bc7aa0d34c9fdd0619b034a32d6ca7b57e # v1.4.2
       with:
         usesh: true
         release: "${{ env.FREEBSD_VER }}"
